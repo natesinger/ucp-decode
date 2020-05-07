@@ -7,15 +7,22 @@ def all():
     copyright()
     seealso()
 
+def abbreviated():
+    name()
+    usage()
+    description()
+
 def name():
     print('\033[1m\033[33mNAME:\033[0m\n\n\
     \tA python parser for interpreting keyboard captures,\n\
-    \tunder USB device class definition HID 1.11.\n')
+    \tunder USB device class definition HID 1.11.\n\n\
+    \t*** REQUIRES PYTHON 3.5+ ***\n')
 
 def usage():
     print('\033[1m\033[33mSYNOPSIS:\033[0m\n\n\
-    \tAccepts either stdin or stdin redirect\n\
-    \t$ upc_decode <input_file.pcap> [flags]...\n')
+    \t$ upc_decode <input_file.pcap> [flags]...\n\
+    \t\t- Accepts stdin or stdin redirect\n\
+    \t\t- Flags must be in correct position\n')
 
 def description():
     print('\033[1m\033[33mDESCRIPTION:\033[0m\n\n\
@@ -25,9 +32,9 @@ def description():
     \t\toutput the lookup information for each character\n\n\
     \t\033[1m-h, --help\033[0m\n\
     \t\tdisplay all application information\n\n\
-    \t\033[1m-o=[FILE], --output=[FILE]\033[0m\n\
+    \t\033[1m-o [FILE], --output [FILE]\033[0m\n\
     \t\toutput results to specified file\n\n\
-    \t\033[1m-O=[FILE], --output-concurrent=[FILE]\033[0m\n\
+    \t\033[1m-O [FILE], --output-concurrent [FILE]\033[0m\n\
     \t\toutput results to specified file and print results to stdout\n\n\
     \t\033[1m-s, --supress-errors\033[0m\n\
     \t\tsupress errors, reserved values, and unknown returns\n')
