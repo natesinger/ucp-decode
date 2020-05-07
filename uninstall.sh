@@ -1,2 +1,2 @@
 #!/bin/bash
-pip3 uninstall upc-decode
+pip3 uninstall ucp-decode

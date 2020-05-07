@@ -1,11 +1,11 @@
 from setuptools import setup
 setup(
-    name = 'upc-decode',
+    name = 'ucp-decode',
     version = '1.0.0',
-    packages = ['upc-decode'],
-    install_requires=["python_version<'3.4'"],
+    packages = ['ucp-decode'],
+    python_requires='>=3.5',
     entry_points = {
         'console_scripts': [
-            'upc_decode = upc_decode.__main__:main'
+            'ucp_decode = ucp_decode.__main__:main'
         ]
     })

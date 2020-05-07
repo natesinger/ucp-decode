@@ -20,7 +20,7 @@ def name():
 
 def usage():
     print('\033[1m\033[33mSYNOPSIS:\033[0m\n\n\
-    \t$ upc_decode <input_file.pcap> [flags]...\n\
+    \t$ ucp_decode <input_file.pcap> [flags]...\n\
     \t\t- Accepts stdin or stdin redirect\n\
     \t\t- Flags must be in correct position\n')
 
