@@ -67,8 +67,7 @@ class Capture():
 
     def decode(self, alpha_num_only, debug, supress_stdout, supress_errors,\
                         output_file, output_filename):
-        data=os.popen('tshark -r {} -T fields -e usb.capdata -2 \'usb.src =='\
-             ' "1.1.1" && usb.transfer_type==0x01\''.format(self.f_cap)).read()
+        data=os.popen('tshark -r {} -T fields -e usb.capdata -2 \'usb.transfer_type==0x01\''.format(self.f_cap)).read()
 
         debug_feed=''
         parsing_feed=''
